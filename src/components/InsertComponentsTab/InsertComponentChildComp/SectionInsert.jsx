@@ -1,19 +1,23 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { SECTION_DUMMY_1, SECTION_DUMMY_2, SECTION_DUMMY_3 } from '../../../Assets/Images'
 import './commonComponent.css'
 
 const SectionInsert = () => {
-    const { pageStore } = useSelector((state) => state)
-	const { pages } = pageStore
     return (
         <div className='w-100 '>
-            {pages.map(page => {
-                return page.content && (
-                <div>
-                    <div dangerouslySetInnerHTML={{__html: page.content['mycustom-html']}}/>
-                    <style>{page.content['mycustom-css']}</style>
-                    <hr />
-                </div>)})}
+            <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_1} alt='default' />
+            </div> <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_3} alt='default' />
+            </div> <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_3} alt='default' />
+            </div> <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_1} alt='default' />
+            </div> <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_2} alt='default' />
+            </div> <div className='wrapper p-2'>
+                <img className='section_img' src={SECTION_DUMMY_3} alt='default' />
+            </div>
         </div>
     )
 }
