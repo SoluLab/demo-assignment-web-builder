@@ -35,7 +35,7 @@ const InsertComponentsInfo = () => {
             {
                 obj.map((elem) => (
                     elem.id === Selectedid && (
-                        <elem.Component />
+                        <elem.Component key={elem.id} />
                     )
                 ))
             }

@@ -41,7 +41,7 @@ const geditorConfig = (assets, pageId) => {
 		blockManager: {
 			appendTo: '#blocks',
 			rightAppendTo: '#right-blocks',
-		},
+	},
 		styleManager: styleManager,
 		layerManager: layerManager,
 		traitManager: traitManager,
@@ -120,6 +120,19 @@ const geditorConfig = (assets, pageId) => {
 			component.set('toolbar', defaultToolbar)
 		}
 	})
+
+
+	// Use the API
+	// const blockManager = editor.Blocks;
+	// const blocks = blockManager.getAll();
+	// console.log(JSON.stringify(blocks), 'blocksssss---');
+
+editor.on('component:add', (component) => {
+	const componentClass = component.getClasses();
+	if (componentClass.includes('insert_image_element')) {
+		component.set('src', 'https://dummyimage.com/800x500/999/222');
+	}
+});
 
 	setTimeout(() => {
 		let categories = editor.BlockManager.getCategories()

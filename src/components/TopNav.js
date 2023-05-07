@@ -10,7 +10,7 @@ function TopNav() {
 		<nav className="navbar navbar-light" id="topBar">
 			<div>
 				<label className="listItem">
-					<i class="fa fa-medium" aria-hidden="true"></i>
+					<i className="fa fa-medium" aria-hidden="true"></i>
 				</label>
 				<label
 					onClick={() => setSelectedTab('insert')}
@@ -18,7 +18,7 @@ function TopNav() {
 						SelectedTab === 'insert' && 'listactive'
 					} listItem`}
 				>
-					<i class="fa fa-plus-square" aria-hidden="true"></i>
+					<i className="fa fa-plus-square" aria-hidden="true"></i>
 					Insert
 				</label>
 				<label
@@ -27,15 +27,15 @@ function TopNav() {
 					} listItem`}
 					onClick={() => setSelectedTab('layout')}
 				>
-					<i class="fa fa-th-large" aria-hidden="true"></i>
+					<i className="fa fa-th-large" aria-hidden="true"></i>
 					Layout
 				</label>
 				<label className="listItem">
-					<i class="fa fa-text-width" aria-hidden="true"></i>
+					<i className="fa fa-text-width" aria-hidden="true"></i>
 					Text
 				</label>
 				<label className="listItem">
-					<i class="fa fa-database" aria-hidden="true"></i>
+					<i className="fa fa-database" aria-hidden="true"></i>
 					CMS
 				</label>
 			</div>
@@ -44,7 +44,7 @@ function TopNav() {
 
 			<div>
 				<label className="listItem">
-					<i class="fa fa-play itemBtn" aria-hidden="true"></i>
+					<i className="fa fa-play itemBtn" aria-hidden="true"></i>
 				</label>
 				<label className="listItem">
 					<span className="itemBtn">Invites</span>
@@ -53,7 +53,7 @@ function TopNav() {
 					<span className="itemBtn publish">Publish</span>
 				</label>
 				<label className="listItem">
-					<i class="fa fa-cog itemBtn" aria-hidden="true"></i>
+					<i className="fa fa-cog itemBtn" aria-hidden="true"></i>
 				</label>
 				<label className="listItem">
 					<span className="msBox">MS</span>

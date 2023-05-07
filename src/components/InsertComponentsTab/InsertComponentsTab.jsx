@@ -22,12 +22,12 @@ const InsertComponentsTab = () => {
                 <div></div>
                 {
                     SideBarList?.map((elem) => (
-                        <div>
+                        <div key={elem.SectionTitle}>
                             <p>{elem.SectionTitle}</p>
                             <ul className='wrapper mb-0 p-0 flex-column'>
                                 {
                                     elem.SectionChilds?.map((child) => (
-                                        <li onMouseOver={() => mouseOverCallback(child.id)} className='list_wrapper p-2 w-100 '>
+                                        <li key={child.id} onMouseOver={() => mouseOverCallback(child.id)} className='list_wrapper p-2 w-100 '>
                                             <div className='wrapper p-1 justify-content-between'>
                                                 <div className='wrapper'>
                                                     <img src={child.icon} alt={child.Label} />

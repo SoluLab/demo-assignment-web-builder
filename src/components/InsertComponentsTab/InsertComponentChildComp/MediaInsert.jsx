@@ -6,7 +6,7 @@ const MediaInsert = () => {
         <div className='w-100 '>
             <p className='mb-0 section_label'> Image </p>
             <div className='grid_wrapper p-2 '>
-                <img className='media_section_img' src={MEDIA_SECTION_IMAGE_IMG} alt='default' />
+                <img className='media_section_img insert_image_element' src={MEDIA_SECTION_IMAGE_IMG} alt='default' />
                 <img className='media_section_img' src={MEDIA_SECTION_IMAGE_GIF} alt='default' />
             </div>
             <p className='mb-0 my-2 section_label'> Video </p>
